@@ -9,9 +9,15 @@ import Cart from './pages/Cart'
 import Login from './pages/Login'
 import Placeorder from './pages/Placeorder'
 import Orders from './pages/Orders'
+import Navbar from './components/Navbar'
 
 const App = () => {
-  <Routes>
+
+  return (
+    <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+    <Navbar/>
+
+    <Routes>
   <Route path='/' element={<Home/>}></Route>
   <Route path='/collection' element={<Collection/>}/>
   <Route path='/about' element={<About/>}/>
@@ -22,11 +28,6 @@ const App = () => {
   <Route path='/place-order' element={<Placeorder/>}/>
   <Route path='/orders' element={<Orders/>}/>
   </Routes>
-  return (
-    <div>
-        <h1 class="text-3xl font-bold underline bg-amber-600">
-    Hello world!
-  </h1>
     </div>
   )
 }
