@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 import LatestColletion from '../components/LatestColletion';
 import BestSeller from '../components/BestSeller';
 import OurPolicy from '../components/OurPolicy';
-import NewsLetterBox from '../components/NewsLetterBox'; // match the filename exactly
+import NewsLetterBox from '../components/NewsLetterBox'; // matches file name exactly
 
 const Home = () => {
   return (
